@@ -1,1 +1,1 @@
-FROM custom-nginx
+FROM custom-nginx:1.0
