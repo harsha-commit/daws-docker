@@ -1,0 +1,14 @@
+- Create an EC2 Instance and Install Docker in it
+- Execute the following commands
+    - To list images `docker images`
+    - To list running process `docker ps`
+    - To list all process `docker ps -a`
+    - To download image from Dockerhub `docker pull <image_name>`
+    - To create a container from image `docker create <image_name>:<tag>`
+    - To start a container `docker start <container_name>/ <container_id>`
+    - To do all the above three 
+        - (foreground) `docker run -it <image_name>:<tag>`
+        - (background) `docker run -d <image_name>:<tag>`
+        - (open port to host) `docker run -d -p <host_port>:<container_port> <image_name>:<tag>`
+    - To delete a image`docker rmi <image_id/ image_name>`
+    - To delete a container `docker rm <container_id>/ <container_name>`
