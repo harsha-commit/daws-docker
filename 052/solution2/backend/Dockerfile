@@ -6,7 +6,7 @@ RUN useradd expense
 RUN mkdir /opt/server && chown expense:expense -R /opt/server && chown -R expense ~/.npm
 
 WORKDIR /opt/server
-USER expense
+# USER expense
 
 COPY package.json .
 COPY *.js .
