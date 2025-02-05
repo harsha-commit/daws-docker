@@ -1,0 +1,1 @@
+FROM custom-nginx

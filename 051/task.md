@@ -12,5 +12,5 @@
     - USER
     - WORKDIR
     - ONBUILD
-
+    - ENTRYPOINT and CMD
 - Write a Dockerfile for Expense DB
