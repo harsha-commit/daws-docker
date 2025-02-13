@@ -1,12 +1,10 @@
 name: expense
 networks:
   expense:
-    driver: bridge
 volumes:
   mysql:
-    external: true
 services:
-  db:
+  mysql:
     image: docksterharsha/mysql:1.0
     environment:
       - MYSQL_ROOT_PASSWORD='ExpenseApp@1'
@@ -23,9 +21,9 @@ services:
     networks:
       - expense
     container_name: backend
-    command: sh -c "sleep 20 && node /opt/server/index.js"
+    command: ['sh', '-c', 'sleep 20 && node /opt/server/index.js']
     depends_on:
-      - db
+      - mysql
   frontend:
     image: docksterharsha/frontend:1.0
     networks:
