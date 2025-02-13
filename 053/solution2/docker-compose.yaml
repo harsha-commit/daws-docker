@@ -6,11 +6,6 @@ volumes:
 services:
   mysql:
     image: docksterharsha/mysql:1.0
-    environment:
-      - MYSQL_ROOT_PASSWORD='ExpenseApp@1'
-      - MYSQL_DATABASE='transactions' 
-      - MYSQL_USER='expense' 
-      - MYSQL_PASSWORD='ExpenseApp@1'
     networks:
       - expense
     container_name: mysql
